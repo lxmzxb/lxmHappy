@@ -728,10 +728,14 @@ img#home_photo2 {
 	display: block;
 	float: left;
 	text-align: center;
-	margin: 10px 50px;
+	margin: 10px 0;
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
+}
+#exp_timeline a:first-child{
+	margin-left: 115px;
+	margin-right: 50px;
 }
 .exp_timeline_title{
 	position:absolute;
