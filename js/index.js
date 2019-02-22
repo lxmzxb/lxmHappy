@@ -223,8 +223,8 @@
 		}
 	});
 	$("#exp_list_toright").click(function(){
+		console.log(page);
 		if(!$("#exp_list_content").is(":animated")){
-			console.log(page);
 			if(page==2){
 				$("#exp_list_content").animate({left:"-=50"},200,function(){
 					$(this).animate({left:"+=50"},200);
