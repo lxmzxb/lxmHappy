@@ -272,15 +272,22 @@
 			});
 	});
 //内容适应居中
-
+var size=$(function(){
+    $("aside").css({"top":($(".active").height()-$("aside").height())/2});
+    $("#home_content").css({"padding-top":($(".active").height()-$("#home_content").height())/6});
+    $("#about_content").css({"padding-top":($(".active").height()-$("#about_content").height())/6});
+    $("#skill_content").css({"padding-top":($(".active").height()-$("#skill_content").height())/6});
+    $("#exp_content").css({"padding-top":($(".active").height()-$("#exp_content").height())/6});
+    $("#demo_content").css({"padding-top":($(".active").height()-$("#demo_content").height())/6});;
+});
 	$(window).resize(function(){
-        var size=$(function(){
+		function size(){
             $("aside").css({"top":($(".active").height()-$("aside").height())/2});
             $("#home_content").css({"padding-top":($(".active").height()-$("#home_content").height())/6});
             $("#about_content").css({"padding-top":($(".active").height()-$("#about_content").height())/6});
             $("#skill_content").css({"padding-top":($(".active").height()-$("#skill_content").height())/6});
             $("#exp_content").css({"padding-top":($(".active").height()-$("#exp_content").height())/6});
             $("#demo_content").css({"padding-top":($(".active").height()-$("#demo_content").height())/6});;
-        });
+		}
 		size();
 	});
